@@ -7,13 +7,16 @@ spring:
     config:
       server:
         git:
-          uri: https://github.com/yannick-djemani/spring-app-config
+          uri: https://github.com/yannick-djemani/spring-app-config.git
+          username: yanger842@gmail.com
+          password: Developpeur2022@
+          default-label: main
           clone-on-start: true
-eureka:
-  instance:
-    prefer-ip-address: true
-  client:
-    fetch-registry: true
-    register-with-eureka: true
-    service-url:
-      defaultZone: ${EUREKA_SERVER_ADDRESS:http://localhost:8761/eureka}
+#eureka:
+#  instance:
+#    prefer-ip-address: true
+#  client:
+#    fetch-registry: true
+#    register-with-eureka: true
+#    service-url:
+#      defaultZone: ${EUREKA_SERVER_ADDRESS:http://localhost:8761/eureka}
